@@ -18,10 +18,9 @@ class AccountController:
 
     def getPrivKeyList(self):
         self.displaySizeOfAddressUniverse()
-        numberofaccounts = int(input("Enter the number of private keys you would like to generate: "))
         privkeylist = []
         i = 0
-        for i in range(numberofaccounts):
+        for i in range(self.promptUserForNumberOfPrivateKeys()):
             bits = secrets.randbits(256)
             hex_bits = hex(bits)
             privatekey = hex_bits[2:]
@@ -83,6 +82,7 @@ class AccountController:
         print("Therefore, there are 16 \N{SUPERSCRIPT SIX}\N{SUPERSCRIPT FOUR} possible permutations: ")
         print("{:,}".format(a ** b))
 
-
+    def promptUserForNumberOfPrivateKeys(self):
+        return int(input("Enter the number of private keys you would like to generate: "))
 
 
