@@ -7,7 +7,9 @@
       <w>keccak</w>
       <w>priv</w>
       <w>privatekey</w>
+      <w>privkey</w>
       <w>publickey</w>
+      <w>recipientaddress</w>
     </words>
   </dictionary>
 </component>

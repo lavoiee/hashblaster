@@ -2,7 +2,7 @@
 
 
 class Account():
-    def __init__(self, _privkey, _pubkey, _address, _balance = 0):
+    def __init__(self, _privkey, _pubkey, _address, _balance=0):
         self.privkey = _privkey
         self.pubkey = _pubkey
         self.address = _address
@@ -17,17 +17,17 @@ class Account():
     def getAddress(self):
         return self.address
 
-    def insufficentFunds(self, _amount):
+    def insufficientFunds(self, _amount):
         if self.balance < _amount:
             return True
         else:
             return False
 
     def sendAmount(self, _recipientaddress, _amount):
-        self.recipientaddress = _recipientaddress
-        self.amount = _amount
-        if not self.insufficentFunds(self.amount):
-            tx = Transaction(_recipientaddress, self.address, _amount)
+        recipientaddress = _recipientaddress
+        amount = _amount
+        if not self.insufficientFunds(amount):
+            tx = Transaction(recipientaddress, self.address, amount)
             return tx
         else:
             print("Insufficient funds to complete transaction")
