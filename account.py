@@ -17,6 +17,9 @@ class Account:
     def getAddress(self):
         return self.address
 
+    def getBalance(self):
+        return self.balance
+
     def insufficientFunds(self, _amount):
         if self.balance < _amount:
             return True
@@ -37,7 +40,7 @@ class Account:
         print("Public Key: " + str(self.pubkey))
         print("Addresss: " + str(self.address))
         print("Balance: " + str(self.balance))
-
+        return ''
 
 
 class Transaction:

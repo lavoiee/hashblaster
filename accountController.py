@@ -6,7 +6,7 @@ import codecs
 from Crypto.Hash import keccak
 from account import Account
 
-numberofaccounts = 100
+numberofaccounts = 10000
 
 
 class AccountController:
@@ -16,6 +16,7 @@ class AccountController:
         self.pubkeylist = self.getPubKeyList(self.privkeylist)
         self.walletaddresslist = self.getWalletAddressList(self.pubkeylist)
         self.accountlist = self.constructAccountsList(self.privkeylist, self.pubkeylist, self.walletaddresslist)
+        self.writeAccountsToFile(self.accountlist)
 
     def getPrivKeyList(self):
         privkeylist = []
@@ -26,12 +27,14 @@ class AccountController:
             privatekey = hex_bits[2:]
             if len(privatekey) > 63:
                 privkeylist.append(privatekey)
+            """
             increment = 0
             with open("ethpriv-keys.txt", "w", encoding='utf-8') as f:
                 f.write('\t\t' + "Generated List of Private Keys!" + '\n')
                 for x in privkeylist:
                     increment += 1
                     f.write(str(increment) + ': ' + x + '\n')
+            """
         return privkeylist
 
     def getPubKeyList(self, _privkeylist):
@@ -44,12 +47,15 @@ class AccountController:
             key_bytes = key.to_string()
             publickey = codecs.encode(key_bytes, 'hex')
             pubkeylist.append(publickey)
+
+        """
         increment = 0
         with open("ethpub-keys.txt", "w", encoding='utf-8') as f:
             f.write('\t\t' + "Generated List of Public Keys!" + '\n')
             for x in pubkeylist:
                 increment += 1
                 f.write(str(increment) + ': ' + str(x) + '\n')
+        """
         return pubkeylist
 
     def getWalletAddressList(self, _pubkeylist):
@@ -63,12 +69,14 @@ class AccountController:
             wallet_length = 40
             wallet = '0x' + keccak_digest[-wallet_length:]
             walletaddresslist.append(wallet)
+        """
         increment = 0
         with open("ethAddresses.txt", "w", encoding='utf-8') as f:
             f.write('\t\t' + "Generated List of Wallet Addresses!" + '\n')
             for x in walletaddresslist:
                 increment += 1
                 f.write(str(increment) + ': ' + str(x) + '\n')
+        """
         return walletaddresslist
 
     def constructAccountsList(self, _privkeylist, _pubkeylist, _walletaddresslist):
@@ -79,5 +87,22 @@ class AccountController:
         for x in range(len(privkeylist)):
             accountlist.append(Account(privkeylist[x], pubkeylist[x], walletaddresslist[x], 0))
         return accountlist
+
+    def writeAccountsToFile(self, _accountlist):
+        accountlist = _accountlist
+
+        with open("ethereum-accounts.txt", "w", encoding='utf-8') as f:
+            f.write('\t\t' + "Generated List of Potential Ethereum Accounts!" + '\n')
+            f.write("***********************************************************************************************************************************************" + '\n')
+            for i in range(len(accountlist)):
+                f.write("Private Key: " + str(accountlist[i].privkey) + '\n')
+                f.write("Public Key: " + str(accountlist[i].pubkey) + '\n')
+                f.write("Address: " + str(accountlist[i].address) + '\n')
+                f.write("Balance: " + str(accountlist[i].balance) + '\n')
+                f.write("***********************************************************************************************************************************************" + '\n')
+
+
+
+
 
 
