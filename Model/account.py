@@ -1,4 +1,4 @@
-# Account class to hold private key, public key, and address on the blockchain
+# Account class to hold private key, public key, address, balance
 
 
 class Account:

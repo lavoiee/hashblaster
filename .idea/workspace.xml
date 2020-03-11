@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d6a01d0-1843-431e-bd9f-e432843b934c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/accountController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ethereum-accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ethereum-accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/accountController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/accountController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ethereum-accounts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,26 +87,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="416" y="145" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583917771060">
+    <state x="416" y="145" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583962833623">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="416" y="145" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1583917771060" />
-    <state width="1342" height="236" key="GridCell.Tab.0.bottom" timestamp="1583943158058">
+    <state x="416" y="145" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1583962833623" />
+    <state width="1342" height="201" key="GridCell.Tab.0.bottom" timestamp="1583968688779">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1342" height="236" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1583943158058" />
-    <state width="1342" height="236" key="GridCell.Tab.0.center" timestamp="1583943158057">
+    <state width="1342" height="201" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1583968688779" />
+    <state width="1342" height="201" key="GridCell.Tab.0.center" timestamp="1583968688779">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1342" height="236" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1583943158057" />
-    <state width="1342" height="236" key="GridCell.Tab.0.left" timestamp="1583943158056">
+    <state width="1342" height="201" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1583968688779" />
+    <state width="1342" height="201" key="GridCell.Tab.0.left" timestamp="1583968688778">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1342" height="236" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1583943158056" />
-    <state width="1342" height="236" key="GridCell.Tab.0.right" timestamp="1583943158057">
+    <state width="1342" height="201" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1583968688778" />
+    <state width="1342" height="201" key="GridCell.Tab.0.right" timestamp="1583968688779">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1342" height="236" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1583943158057" />
+    <state width="1342" height="201" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1583968688779" />
     <state width="1342" height="249" key="GridCell.Tab.1.bottom" timestamp="1583937104499">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
