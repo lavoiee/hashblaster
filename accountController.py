@@ -4,19 +4,23 @@ import ecdsa
 import secrets
 import codecs
 from Crypto.Hash import keccak
+from account import Account
+
+numberofaccounts = 100
 
 
 class AccountController:
+
     def __init__(self):
         self.privkeylist = self.getPrivKeyList()
         self.pubkeylist = self.getPubKeyList(self.privkeylist)
         self.walletaddresslist = self.getWalletAddressList(self.pubkeylist)
-        self.accountlist = []
+        self.accountlist = self.constructAccountsList(self.privkeylist, self.pubkeylist, self.walletaddresslist)
 
     def getPrivKeyList(self):
         privkeylist = []
         i = 0
-        for i in range(100000):
+        for i in range(numberofaccounts):
             bits = secrets.randbits(256)
             hex_bits = hex(bits)
             privatekey = hex_bits[2:]
@@ -66,4 +70,14 @@ class AccountController:
                 increment += 1
                 f.write(str(increment) + ': ' + str(x) + '\n')
         return walletaddresslist
+
+    def constructAccountsList(self, _privkeylist, _pubkeylist, _walletaddresslist):
+        accountlist = []
+        privkeylist = _privkeylist
+        pubkeylist = _pubkeylist
+        walletaddresslist = _walletaddresslist
+        for x in range(len(privkeylist)):
+            accountlist.append(Account(privkeylist[x], pubkeylist[x], walletaddresslist[x], 0))
+        return accountlist
+
 

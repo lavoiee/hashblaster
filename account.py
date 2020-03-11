@@ -12,7 +12,7 @@ class Account:
         return self.privkey
 
     def getPubKey(self):
-        return self.getPubKey
+        return self.pubkey
 
     def getAddress(self):
         return self.address
@@ -31,6 +31,13 @@ class Account:
             return tx
         else:
             print("Insufficient funds to complete transaction")
+
+    def __str__(self):
+        print("Private Key: " + str(self.privkey))
+        print("Public Key: " + str(self.pubkey))
+        print("Addresss: " + str(self.address))
+        print("Balance: " + str(self.balance))
+
 
 
 class Transaction:
