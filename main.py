@@ -1,7 +1,8 @@
 
-import ecdsa
+
 # secrets is a cryptographically secure source of random numbers
 import secrets
+import ecdsa
 import codecs
 from Crypto.Hash import keccak
 
