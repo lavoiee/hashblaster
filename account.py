@@ -32,6 +32,7 @@ class Account():
         else:
             print("Insufficient funds to complete transaction")
 
+
 class Transaction():
     def __init__(self, _recipientaddress, _senderaddress, _amount):
         self.recipientaddress = _recipientaddress

@@ -10,6 +10,7 @@
       <w>privkey</w>
       <w>publickey</w>
       <w>recipientaddress</w>
+      <w>senderaddress</w>
     </words>
   </dictionary>
 </component>
