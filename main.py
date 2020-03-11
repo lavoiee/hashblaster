@@ -1,12 +1,8 @@
-import requests
-import time
-import ecdsa
-import binascii
 
+import ecdsa
 # secrets is a cryptographically secure source of random numbers
 import secrets
 import codecs
-
 from Crypto.Hash import keccak
 
 privKeyList = []
