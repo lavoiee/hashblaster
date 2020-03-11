@@ -1,7 +1,7 @@
 # Account class to hold private key, public key, and address on the blockchain
 
 
-class Account():
+class Account:
     def __init__(self, _privkey, _pubkey, _address, _balance=0):
         self.privkey = _privkey
         self.pubkey = _pubkey
@@ -33,7 +33,7 @@ class Account():
             print("Insufficient funds to complete transaction")
 
 
-class Transaction():
+class Transaction:
     def __init__(self, _recipientaddress, _senderaddress, _amount):
         self.recipientaddress = _recipientaddress
         self.senderaddress = _senderaddress

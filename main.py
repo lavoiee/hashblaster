@@ -6,6 +6,10 @@ import ecdsa
 import codecs
 from Crypto.Hash import keccak
 
+from accountController import AccountController
+
+accControl = AccountController()
+
 privKeyList = []
 pubKeyList = []
 walletAddressList = []
