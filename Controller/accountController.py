@@ -1,10 +1,9 @@
-import account
 import ecdsa
 # secrets is a cryptographically secure source of random numbers
 import secrets
 import codecs
 from Crypto.Hash import keccak
-from account import Account
+from Model.account import Account
 
 numberofaccounts = 10000
 
@@ -91,7 +90,7 @@ class AccountController:
     def writeAccountsToFile(self, _accountlist):
         accountlist = _accountlist
 
-        with open("ethereum-accounts.txt", "w", encoding='utf-8') as f:
+        with open("../Data/ethereum-accounts.txt", "w", encoding='utf-8') as f:
             f.write('\t\t' + "Generated List of Potential Ethereum Accounts!" + '\n')
             f.write("***********************************************************************************************************************************************" + '\n')
             for i in range(len(accountlist)):

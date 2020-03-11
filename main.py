@@ -1,4 +1,4 @@
-from accountController import AccountController
+from Controller.accountController import AccountController
 
 accControl = AccountController()
 

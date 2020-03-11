@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d6a01d0-1843-431e-bd9f-e432843b934c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountController.py" beforeDir="false" afterPath="$PROJECT_DIR$/accountController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ethAddresses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ethpriv-keys.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ethpub-keys.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accountController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/accountController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ethereum-accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ethereum-accounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +36,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Data" />
+      <recent name="$PROJECT_DIR$/Model" />
+      <recent name="$PROJECT_DIR$/Controller" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -86,22 +90,22 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="416" y="145" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1583917771060" />
-    <state width="1342" height="236" key="GridCell.Tab.0.bottom" timestamp="1583942852176">
+    <state width="1342" height="236" key="GridCell.Tab.0.bottom" timestamp="1583943158058">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1342" height="236" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1583942852176" />
-    <state width="1342" height="236" key="GridCell.Tab.0.center" timestamp="1583942852175">
+    <state width="1342" height="236" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1583943158058" />
+    <state width="1342" height="236" key="GridCell.Tab.0.center" timestamp="1583943158057">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1342" height="236" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1583942852175" />
-    <state width="1342" height="236" key="GridCell.Tab.0.left" timestamp="1583942852175">
+    <state width="1342" height="236" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1583943158057" />
+    <state width="1342" height="236" key="GridCell.Tab.0.left" timestamp="1583943158056">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1342" height="236" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1583942852175" />
-    <state width="1342" height="236" key="GridCell.Tab.0.right" timestamp="1583942852176">
+    <state width="1342" height="236" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1583943158056" />
+    <state width="1342" height="236" key="GridCell.Tab.0.right" timestamp="1583943158057">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1342" height="236" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1583942852176" />
+    <state width="1342" height="236" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1583943158057" />
     <state width="1342" height="249" key="GridCell.Tab.1.bottom" timestamp="1583937104499">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
