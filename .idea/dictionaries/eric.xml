@@ -1,6 +1,7 @@
 <component name="ProjectDictionaryState">
   <dictionary name="eric">
     <words>
+      <w>accountlist</w>
       <w>ecdsa</w>
       <w>ethpriv</w>
       <w>ethpub</w>
@@ -8,9 +9,12 @@
       <w>priv</w>
       <w>privatekey</w>
       <w>privkey</w>
+      <w>privkeylist</w>
+      <w>pubkeylist</w>
       <w>publickey</w>
       <w>recipientaddress</w>
       <w>senderaddress</w>
+      <w>walletaddresslist</w>
     </words>
   </dictionary>
 </component>
